@@ -13,13 +13,13 @@ import java.text.SimpleDateFormat;
 class AddObat extends JFrame {
 
 	JLabel lihatdatabase_jl_ubah = new JLabel(
-			new ImageIcon("D:\\Mina\\KULIAH\\Matkul\\SEMESTER 4\\Pemrograman Objek 2\\PRAKTIKUM\\Apotek\\Apotek\\src\\image\\fiturubah.png"));
+			new ImageIcon(getClass().getResource("/image/fiturubah.png")));
 	JLabel lihatdatabase_jl_hapus = new JLabel(
-			new ImageIcon("D:\\Mina\\KULIAH\\Matkul\\SEMESTER 4\\Pemrograman Objek 2\\PRAKTIKUM\\Apotek\\Apotek\\src\\image\\fiturhapus.png"));
+			new ImageIcon(getClass().getResource("/image/fiturhapus.png")));
 	JLabel lihatdatabase_jl_cari = new JLabel(
-			new ImageIcon("D:\\Mina\\KULIAH\\Matkul\\SEMESTER 4\\Pemrograman Objek 2\\PRAKTIKUM\\Apotek\\Apotek\\src\\image\\cariadmin.png"));
+			new ImageIcon(getClass().getResource("/image/cariadmin.png")));
 	JLabel titledatabase = new JLabel(
-			new ImageIcon("D:\\Mina\\KULIAH\\Matkul\\SEMESTER 4\\Pemrograman Objek 2\\PRAKTIKUM\\Apotek\\Apotek\\src\\image\\databaseobat.png"));
+			new ImageIcon(getClass().getResource("/image/databaseobat.png")));
 
 	JLabel Kode_Obat_label = new JLabel("Kode Obat");
 	JTextField kode_obat = new JTextField();
@@ -35,7 +35,7 @@ class AddObat extends JFrame {
 	JTextField lihatdatabase_jtf_cari = new JTextField();
 
 	JLabel lihatdatabase_jl_logo = new JLabel(
-			new ImageIcon("D:\\Mina\\KULIAH\\Matkul\\SEMESTER 4\\Pemrograman Objek 2\\PRAKTIKUM\\Apotek\\Apotek\\src\\image\\logo.png"));
+			new ImageIcon(getClass().getResource("/image/logo.png")));
 	String[] header = { "Kode Obat", "Nama Obat" , "Harga", "Stok","Keterangan","Exp_Date" };
 	DefaultTableModel model = new DefaultTableModel(null, header);
 	JLabel stock_label,ket_label,Exp;
@@ -43,8 +43,8 @@ class AddObat extends JFrame {
 	JScrollPane pane = new JScrollPane(tabel);
 	JDateChooser txtTggl = new com.toedter.calendar.JDateChooser();
 	
-	private final JLabel lihatdatabase_jl_tambah = new JLabel(new ImageIcon("D:\\Mina\\KULIAH\\Matkul\\SEMESTER 4\\Pemrograman Objek 2\\PRAKTIKUM\\Apotek\\Apotek\\src\\image\\fiturtambah.png"));
-	private final JLabel lihatdatabase_jl_bersih = new JLabel(new ImageIcon("D:\\Mina\\KULIAH\\Matkul\\SEMESTER 4\\Pemrograman Objek 2\\PRAKTIKUM\\Apotek\\Apotek\\src\\image\\bersih.png"));
+	private final JLabel lihatdatabase_jl_tambah = new JLabel(new ImageIcon(getClass().getResource("/image/fiturtambah.png")));
+	private final JLabel lihatdatabase_jl_bersih = new JLabel(new ImageIcon(getClass().getResource("/image/bersih.png")));
 	private LabelTime waktu;
 	private JTextField stok_field;
 	private JTextField keterangan;
